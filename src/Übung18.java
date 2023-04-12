@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
-public class Übung17 {
+public class Übung18 {
     
     public static void main(String[] args) {
+        
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the first binary number: ");
@@ -14,13 +15,14 @@ public class Übung17 {
         int decimal1 = Integer.parseInt(binary1, 2);
         int decimal2 = Integer.parseInt(binary2, 2);
 
-        int sum = decimal1 + decimal2;
+        int decimalMulti = decimal1 * decimal2;
 
-        String binarySum = Integer.toBinaryString(sum);
+        String binarySum = Integer.toBinaryString(decimalMulti);
 
-        System.out.println("The sum of " + binary1 + " and " + binary2 + " is " + binarySum);
+        System.out.println("The multiplication of " + binary1 + " and " + binary2 + " is " + binarySum);
 
         scanner.close();
+
     }
 
 }
